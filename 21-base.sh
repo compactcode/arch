@@ -1,5 +1,7 @@
 # Set locale
 CreateLink /etc/localtime /usr/share/zoneinfo/Australia/Melbourne
+CopyFile /etc/locale.gen
+CopyFile /etc/locale.conf
 
 # Set hostname
 CopyFile /etc/hostname
