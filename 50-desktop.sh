@@ -20,6 +20,9 @@ AddPackage xdg-desktop-portal
 AddPackage xdg-user-dirs
 AddPackage xdg-utils
 
+# gtk
+AddPackage gtk2
+
 # theme
 AddPackage arc-gtk-theme
 
