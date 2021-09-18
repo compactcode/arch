@@ -1,3 +1,6 @@
+# ld
+IgnorePath '/etc/ld.so.cache'
+
 # systemd-boot
 IgnorePath '/boot/initramfs*.img'
 IgnorePath '/boot/vmlinuz-linux'
@@ -9,3 +12,6 @@ IgnorePath '/var/.updated'
 
 # systemd logs
 IgnorePath '/var/log/*'
+
+# pacman
+IgnorePath '/var/lib/pacman/local/*'

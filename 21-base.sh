@@ -1,3 +1,6 @@
+# Set time
+CopyFile /etc/adjtime
+
 # Set locale
 CreateLink /etc/localtime /usr/share/zoneinfo/Australia/Melbourne
 CopyFile /etc/locale.gen
