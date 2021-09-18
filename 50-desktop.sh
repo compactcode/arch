@@ -1,31 +1,32 @@
-# AMD
-
+# amd
 AddPackage mesa # OpenGL
 AddPackage vulkan-radeon # Vulkan
 AddPackage xf86-video-amdgpu # 2D acceleration
 AddPackage libva-mesa-driver # VA-API
 AddPackage mesa-vdpau # VDPAU
 
-# Xorg
-
+# xorg
 AddPackage xorg-server
 
-# Window Manager
-
+# window manager
 AddPackage i3-gaps
 
-# Sound
-
+# sound
 AddPackage pipewire
 AddPackage pipewire-pulse
 
-# XDG
-
-AddPackage xdg-utils
+# xdg
 AddPackage xdg-desktop-portal
+AddPackage xdg-user-dirs
+AddPackage xdg-utils
 
-# Applications
+# theme
+AddPackage arc-gtk-theme
 
+# fonts
+AddPackage --foreign nerd-fonts-source-code-pro
+
+# applications
 AddPackage alacritty
 AddPackage discord
 AddPackage firefox

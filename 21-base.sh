@@ -1,19 +1,19 @@
-# Set time
+# set time
 CopyFile /etc/adjtime
 
-# Set locale
+# set locale
 CreateLink /etc/localtime /usr/share/zoneinfo/Australia/Melbourne
 CopyFile /etc/locale.gen
 CopyFile /etc/locale.conf
 
-# Set hostname
+# set hostname
 CopyFile /etc/hostname
 
-# Custom domains
+# custom domains
 CopyFile /etc/hosts
 
-# Enable pacman respositories
+# enable pacman respositories
 CopyFile /etc/pacman.conf
 
-# Enable wired networking
+# enable wired networking
 CopyFile /etc/systemd/network/20-wired.network
