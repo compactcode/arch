@@ -9,6 +9,9 @@ IgnorePath '/boot/vmlinuz-linux'
 IgnorePath '/etc/mkinitcpio.d/linux.preset'
 IgnorePath '/var/lib/plymouth/boot-duration'
 
+# passwd
+IgnorePath '/etc/.pwd.lock'
+
 # udev
 IgnorePath '/etc/udev/hwdb.bin'
 
@@ -24,7 +27,9 @@ IgnorePath '/var/.updated'
 IgnorePath '/var/log/*'
 
 # pacman
+IgnorePath '/etc/pacman.d/gnupg'
 IgnorePath '/var/lib/pacman/local/*'
+IgnorePath '/var/lib/pacman/sync/*'
 
 # certificates
 IgnorePath '/etc/ca-certificates/extracted'
@@ -51,6 +56,9 @@ IgnorePath '/usr/share/mime/subclasses'
 IgnorePath '/usr/share/mime/treemagic' # Directory magic
 IgnorePath '/usr/share/mime/types'
 IgnorePath '/usr/share/mime/version'
+
+# icons
+IgnorePath '/usr/share/icons/*/icon-theme.cache'
 
 # kernel
 IgnorePath '/usr/lib/modules/*-arch*'
