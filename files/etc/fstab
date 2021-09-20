@@ -1,0 +1,9 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+/dev/mapper/lvm-arch / ext4 rw,relatime,stripe=4 0 1
+
+/dev/disk/by-label/booty /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
+
+/dev/mapper/lvm-swap none swap defaults 0 0

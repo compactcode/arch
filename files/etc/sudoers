@@ -1,8 +1,8 @@
 ## root is allowed to do anything.
 root ALL=(ALL) ALL
 
-## sudo users are allowed to do anything.
-%sudo	ALL=(ALL) ALL
+## wheel users are allowed to do anything.
+%wheel ALL=(ALL) ALL
 
 ## drop-in files.
 @includedir /etc/sudoers.d

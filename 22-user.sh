@@ -1,9 +1,7 @@
 # user
-#CopyFile /etc/group
-#CopyFile /etc/passwd
-
-# enable sudo for users
+CopyFile /etc/group
+CopyFile /etc/passwd
 CopyFile /etc/sudoers
 
-# dotfile manager for users
+# dotfile manager
 AddPackage --foreign yadm-git
