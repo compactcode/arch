@@ -9,8 +9,13 @@ IgnorePath '/boot/vmlinuz-linux'
 IgnorePath '/etc/mkinitcpio.d/linux.preset'
 IgnorePath '/var/lib/plymouth/boot-duration'
 
-# passwd
+# user
 IgnorePath '/etc/.pwd.lock'
+IgnorePath '/etc/passwd-'
+IgnorePath '/etc/group-'
+IgnorePath '/etc/shadow*'
+IgnorePath '/etc/gshadow*'
+IgnorePath '/var/db/sudo/lectured/*'
 
 # udev
 IgnorePath '/etc/udev/hwdb.bin'
