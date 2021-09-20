@@ -7,6 +7,7 @@ AddPackage mesa-vdpau # VDPAU
 
 # xorg
 AddPackage xorg-server
+AddPackage xorg-xinit
 
 # window manager
 AddPackage i3-gaps
@@ -33,6 +34,3 @@ AddPackage --foreign nerd-fonts-source-code-pro
 AddPackage alacritty
 AddPackage discord
 AddPackage firefox
-
-AddPackage --foreign 1password
-AddPackage --foreign slack-dsktop

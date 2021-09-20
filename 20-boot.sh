@@ -19,3 +19,5 @@ CopyFile /boot/loader/loader.conf 755
 AddPackage --foreign plymouth-git
 CopyFile /etc/mkinitcpio.conf
 CopyFile /etc/plymouth/plymouthd.conf
+CreateFile /etc/os-release > /dev/null
+CreateFile /etc/vconsole.conf > /dev/null

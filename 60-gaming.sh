@@ -1,9 +1,7 @@
 # Launcher
-
 AddPackage steam
 
 # Font
-
 AddPackage ttf-liberation
 AddPackage lib32-fontconfig
 
