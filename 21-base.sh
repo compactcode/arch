@@ -14,6 +14,12 @@ CopyFile /etc/hosts
 CopyFile /etc/pacman.conf
 CopyFile /etc/pacman.d/mirrorlist
 
+# ssh
+AddPackage openssh
+
+# smart card
+AddPackage ccid
+
 # enable systemd-networkd
 CreateLink /etc/systemd/system/dbus-org.freedesktop.network1.service /usr/lib/systemd/system/systemd-networkd.service
 CreateLink /etc/systemd/system/multi-user.target.wants/systemd-networkd.service /usr/lib/systemd/system/systemd-networkd.service

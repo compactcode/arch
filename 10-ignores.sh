@@ -1,6 +1,9 @@
 # ld
 IgnorePath '/etc/ld.so.cache'
 
+# info
+IgnorePath '/usr/share/info/dir'
+
 # systemd-boot
 IgnorePath '/boot/EFI/BOOT/BOOTX64.EFI'
 IgnorePath '/boot/EFI/systemd/systemd-bootx64.efi'
@@ -20,6 +23,7 @@ IgnorePath '/var/db/sudo/lectured/*'
 
 # udev
 IgnorePath '/etc/udev/hwdb.bin'
+IgnorePath '/usr/lib/udev/hwdb.bin'
 
 # systemd
 IgnorePath '/var/lib/systemd/catalog/database'
