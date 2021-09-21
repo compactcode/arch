@@ -17,6 +17,9 @@ CopyFile /etc/pacman.d/mirrorlist
 # ssh
 AddPackage openssh
 
+# config manager
+AddPackage --foreign aconfmgr-git
+
 # smart card
 AddPackage ccid
 

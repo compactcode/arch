@@ -1,3 +1,6 @@
+# yay
+IgnorePackage --foreign yay-bin
+
 # ld
 IgnorePath '/etc/ld.so.cache'
 
