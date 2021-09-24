@@ -31,6 +31,7 @@ IgnorePath '/usr/lib/udev/hwdb.bin'
 # systemd
 IgnorePath '/var/lib/systemd/catalog/database'
 IgnorePath '/var/lib/systemd/random-seed'
+IgnorePath '/var/tmp/systemd-private-*'
 
 # systemd-update-done.service
 IgnorePath '/etc/.updated'
@@ -50,7 +51,9 @@ IgnorePath '/etc/ssl/certs'
 
 # gtk
 IgnorePath '/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache'
+IgnorePath '/usr/lib/gtk-2.0/2.10.0/immodules.cache'
 IgnorePath '/usr/lib/gtk-3.0/3.0.0/immodules.cache'
+IgnorePath '/usr/lib32/gtk-2.0/2.10.0/immodules.cache'
 
 # gnome
 IgnorePath '/usr/lib/gio/modules/giomodule.cache'

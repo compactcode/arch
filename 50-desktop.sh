@@ -8,9 +8,15 @@ AddPackage mesa-vdpau # VDPAU
 # xorg
 AddPackage xorg-server
 AddPackage xorg-xinit
+AddPackage xorg-xdpyinfo
+AddPackage xorg-xwininfo
 
 # window manager
 AddPackage i3-gaps
+AddPackage i3status-rust
+
+# compositor
+AddPackage picom
 
 # sound
 AddPackage pipewire
@@ -28,9 +34,12 @@ AddPackage gtk2
 AddPackage arc-gtk-theme
 
 # fonts
+AddPackage adobe-source-code-pro-fonts
+AddPackage noto-fonts
 AddPackage --foreign nerd-fonts-source-code-pro
 
 # applications
 AddPackage alacritty
 AddPackage discord
 AddPackage firefox
+AddPackage rofi
