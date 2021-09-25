@@ -19,6 +19,8 @@ CopyFile /etc/machine-id 444
 
 # initramfs
 AddPackage --foreign plymouth-git
+AddPackage --foreign plymouth-theme-glowing-git
+AddPackage ttf-dejavu
 CopyFile /etc/mkinitcpio.conf
 CopyFile /etc/plymouth/plymouthd.conf
 CreateLink /etc/os-release ../usr/lib/os-release
