@@ -1,3 +1,6 @@
+# random
+IgnorePath '/lost+found'
+
 # yay
 IgnorePackage --foreign yay-bin
 
@@ -6,6 +9,9 @@ IgnorePath '/etc/ld.so.cache'
 
 # info
 IgnorePath '/usr/share/info/dir'
+
+# locale
+IgnorePath '/usr/lib/locale/locale-archive'
 
 # systemd-boot
 IgnorePath '/boot/EFI/BOOT/BOOTX64.EFI'
@@ -59,6 +65,7 @@ IgnorePath '/usr/lib32/gtk-2.0/2.10.0/immodules.cache'
 IgnorePath '/usr/lib/gio/modules/giomodule.cache'
 
 # mime
+IgnorePath '/usr/share/applications/mimeinfo.cache'
 IgnorePath '/usr/share/mime/*.xml' # Localizations
 IgnorePath '/usr/share/mime/XMLnamespaces'
 IgnorePath '/usr/share/mime/aliases' # MIME aliases
@@ -72,6 +79,11 @@ IgnorePath '/usr/share/mime/subclasses'
 IgnorePath '/usr/share/mime/treemagic' # Directory magic
 IgnorePath '/usr/share/mime/types'
 IgnorePath '/usr/share/mime/version'
+
+# fonts
+IgnorePath '/etc/fonts/conf.d/*'
+IgnorePath '/usr/share/fonts/*'
+IgnorePath '/usr/share/glib-2.0/schemas/gschemas.compiled'
 
 # icons
 IgnorePath '/usr/share/icons/*/icon-theme.cache'

@@ -20,8 +20,32 @@ AddPackage openssh
 # config manager
 AddPackage --foreign aconfmgr-git
 
-# smart card
+# gpg
+CreateLink /etc/systemd/user/sockets.target.wants/dirmngr.socket /usr/lib/systemd/user/dirmngr.socket
+CreateLink /etc/systemd/user/sockets.target.wants/gpg-agent-browser.socket /usr/lib/systemd/user/gpg-agent-browser.socket
+CreateLink /etc/systemd/user/sockets.target.wants/gpg-agent-extra.socket /usr/lib/systemd/user/gpg-agent-extra.socket
+CreateLink /etc/systemd/user/sockets.target.wants/gpg-agent-ssh.socket /usr/lib/systemd/user/gpg-agent-ssh.socket
+CreateLink /etc/systemd/user/sockets.target.wants/gpg-agent.socket /usr/lib/systemd/user/gpg-agent.socket
+
+# gpg smart card
 AddPackage ccid
+
+# systemd
+CreateDir /var/lib/systemd/coredump
+CreateDir /var/lib/systemd/linger
+CreateDir /var/lib/systemd/pstore
+CreateDir /var/lib/machines 700
+CreateDir /var/lib/portables 700
+CreateDir /var/lib/private 700
+CreateLink /etc/systemd/system/multi-user.target.wants/remote-fs.target /usr/lib/systemd/system/remote-fs.target
+CreateLink /etc/systemd/user/sockets.target.wants/p11-kit-server.socket /usr/lib/systemd/user/p11-kit-server.socket
+
+# enable systemd-timesyncd
+CreateLink /etc/systemd/system/dbus-org.freedesktop.timesync1.service /usr/lib/systemd/system/systemd-timesyncd.service
+CreateLink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service /usr/lib/systemd/system/systemd-timesyncd.service
+CreateFile /var/lib/systemd/timesync/clock '' systemd-timesync systemd-timesync > /dev/null
+SetFileProperty /var/lib/systemd/timesync group systemd-timesync
+SetFileProperty /var/lib/systemd/timesync owner systemd-timesync
 
 # enable systemd-networkd
 CreateLink /etc/systemd/system/dbus-org.freedesktop.network1.service /usr/lib/systemd/system/systemd-networkd.service
