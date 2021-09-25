@@ -5,12 +5,12 @@ AddPackage fd # find replacement
 AddPackage fzf # fuzzy finder
 AddPackage git # version control
 AddPackage ripgrep # grep replacement
+AddPackage zoxide # cd replacement
 
 # shells
 AddPackage zsh
 AddPackage --foreign zinit-git # zsh plugin manager
 AddPackage starship # zsh prompt
-CopyFile /etc/shells
 
 # editor
 AddPackage neovim # text editor
