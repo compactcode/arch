@@ -19,6 +19,9 @@ AddPackage i3status-rust
 # compositor
 AddPackage picom
 
+# notifications
+AddPackage dunst
+
 # sound
 AddPackage pipewire
 CreateLink /etc/systemd/user/sockets.target.wants/pipewire.socket /usr/lib/systemd/user/pipewire.socket

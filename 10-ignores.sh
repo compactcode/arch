@@ -1,5 +1,10 @@
-# nas
+# nfs
 IgnorePath '/nas*'
+IgnorePath '/var/lib/nfs/state'
+
+# vpn
+IgnorePath '/etc/openvpn*'
+IgnorePath '/var/lib/nfs/state'
 
 # random
 IgnorePath '/lost+found'

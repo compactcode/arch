@@ -20,6 +20,10 @@ AddPackage openssh
 # vpn
 AddPackage openvpn
 
+# nfs
+AddPackage nfs-utils
+CreateDir /var/lib/rpcbind 700 rpc rpc
+
 # config manager
 AddPackage --foreign aconfmgr-git
 
@@ -40,6 +44,7 @@ CreateDir /var/lib/systemd/pstore
 CreateDir /var/lib/machines 700
 CreateDir /var/lib/portables 700
 CreateDir /var/lib/private 700
+CreateFile /var/lib/systemd/timers/stamp-shadow.timer > /dev/null
 CreateLink /etc/systemd/system/multi-user.target.wants/remote-fs.target /usr/lib/systemd/system/remote-fs.target
 CreateLink /etc/systemd/user/sockets.target.wants/p11-kit-server.socket /usr/lib/systemd/user/p11-kit-server.socket
 
