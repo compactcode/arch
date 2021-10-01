@@ -1,11 +1,16 @@
+# replacements
+AddPackage bat # cat
+AddPackage exa # ls
+AddPackage fd # find
+AddPackage procs # ps
+AddPackage ripgrep # grep
+AddPackage zoxide # cd
+AddPackage --foreign zenith-bin # htop
+
 # utilities
-AddPackage bat # cat replacement
-AddPackage exa # ls replacement
-AddPackage fd # find replacement
 AddPackage fzf # fuzzy finder
 AddPackage git # version control
-AddPackage ripgrep # grep replacement
-AddPackage zoxide # cd replacement
+AddPackage pass # password manager
 
 # shells
 AddPackage zsh
