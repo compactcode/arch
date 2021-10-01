@@ -1,3 +1,6 @@
+# nas
+IgnorePath '/nas*'
+
 # random
 IgnorePath '/lost+found'
 

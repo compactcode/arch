@@ -8,6 +8,7 @@ AddPackage linux-firmware
 
 # filysystem
 AddPackage lvm2
+AddPackage nfs-utils
 CopyFile /etc/fstab
 
 # systemd-boot
