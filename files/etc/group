@@ -48,3 +48,5 @@ avahi:x:974:
 geoclue:x:973:
 polkitd:x:102:
 rtkit:x:133:
+rpc:x:32:
+openvpn:x:972:

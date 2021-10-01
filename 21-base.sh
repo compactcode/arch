@@ -17,6 +17,9 @@ CopyFile /etc/pacman.d/mirrorlist
 # ssh
 AddPackage openssh
 
+# vpn
+AddPackage openvpn
+
 # config manager
 AddPackage --foreign aconfmgr-git
 

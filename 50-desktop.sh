@@ -10,6 +10,7 @@ AddPackage xorg-server
 AddPackage xorg-xinit
 AddPackage xorg-xdpyinfo
 AddPackage xorg-xwininfo
+AddPackage xclip
 
 # window manager
 AddPackage i3-gaps
