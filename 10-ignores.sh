@@ -45,6 +45,7 @@ IgnorePath '/usr/lib/udev/hwdb.bin'
 # systemd
 IgnorePath '/var/lib/systemd/catalog/database'
 IgnorePath '/var/lib/systemd/random-seed'
+IgnorePath '/var/lib/systemd/coredump*'
 IgnorePath '/var/tmp/systemd-private-*'
 
 # systemd-update-done.service
@@ -98,6 +99,13 @@ IgnorePath '/usr/share/icons/*/icon-theme.cache'
 
 # kernel
 IgnorePath '/usr/lib/modules/*-arch*'
+
+# docker
+IgnorePath '/var/lib/docker*'
+IgnorePath '/etc/docker/key.json'
+
+# apps
+IgnorePath '/opt/1Password/*'
 
 # misc
 IgnorePath '/etc/xml/catalog'

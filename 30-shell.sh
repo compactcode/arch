@@ -11,6 +11,8 @@ AddPackage --foreign zenith-bin # htop
 AddPackage fzf # fuzzy finder
 AddPackage git # version control
 AddPackage pass # password manager
+AddPackage pass-otp # password manager otp support
+AddPackage jq # json wrangling
 
 # shells
 AddPackage zsh

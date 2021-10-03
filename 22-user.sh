@@ -2,6 +2,7 @@
 CopyFile /etc/group
 CopyFile /etc/passwd
 CopyFile /etc/sudoers
+SetFileProperty /etc/sudoers mode 644
 SetFileProperty /usr/bin/newgidmap mode 755
 SetFileProperty /usr/bin/newuidmap mode 755
 
