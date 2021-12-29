@@ -4,6 +4,9 @@ AddPackage aws-vault
 AddPackage kubectl
 AddPackage k9s
 
+# cloud
+AddPackage terraform
+
 # docker
 AddPackage docker
 AddPackage docker-compose
@@ -25,3 +28,7 @@ AddPackage --foreign chruby
 # ruby gem dependencies
 AddPackage libyaml
 AddPackage postgresql-libs
+
+# rust
+AddPackage rustup
+AddPackage rust-analyzer

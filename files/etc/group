@@ -26,7 +26,7 @@ render:x:989:
 sgx:x:988:
 storage:x:987:
 tty:x:5:
-uucp:x:986:
+uucp:x:986:shandogs
 video:x:985:
 users:x:984:
 systemd-journal:x:983:

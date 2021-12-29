@@ -12,6 +12,10 @@ AddPackage xorg-xdpyinfo
 AddPackage xorg-xwininfo
 AddPackage xclip
 
+# xorg utilities
+AddPackage maim # screenshots
+AddPackage redshift # night light
+
 # window manager
 AddPackage i3-gaps
 AddPackage i3status-rust
@@ -59,6 +63,8 @@ AddPackage --foreign nerd-fonts-source-code-pro
 AddPackage alacritty
 AddPackage discord
 AddPackage firefox
+AddPackage mpv
+AddPackage pinta
 AddPackage rofi
 AddPackage signal-desktop
 AddPackage --foreign slack-desktop

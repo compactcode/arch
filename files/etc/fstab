@@ -9,4 +9,8 @@
 /dev/mapper/lvm-swap none swap defaults 0 0
 
 # NAS
+192.168.1.200:/mnt/storage/applications /nas/applications nfs _netdev,noauto,x-systemd.automount,x-systemd.mount-timeout=10,timeo=14 0 0
 192.168.1.200:/mnt/storage/documents /nas/documents nfs _netdev,noauto,x-systemd.automount,x-systemd.mount-timeout=10,timeo=14 0 0
+192.168.1.200:/mnt/storage/media /nas/media nfs _netdev,noauto,x-systemd.automount,x-systemd.mount-timeout=10,timeo=14 0 0
+192.168.1.200:/mnt/storage/photos /nas/photos nfs _netdev,noauto,x-systemd.automount,x-systemd.mount-timeout=10,timeo=14 0 0
+192.168.1.200:/mnt/storage/staging /nas/staging nfs _netdev,noauto,x-systemd.automount,x-systemd.mount-timeout=10,timeo=14 0 0

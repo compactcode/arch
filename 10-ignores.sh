@@ -107,5 +107,8 @@ IgnorePath '/etc/docker/key.json'
 # apps
 IgnorePath '/opt/1Password/*'
 
+# mono
+IgnorePath '/usr/share/.mono/*'
+
 # misc
 IgnorePath '/etc/xml/catalog'

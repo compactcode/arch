@@ -24,6 +24,9 @@ AddPackage openvpn
 AddPackage nfs-utils
 CreateDir /var/lib/rpcbind 700 rpc rpc
 
+# ntfs
+AddPackage ntfs-3g
+
 # config manager
 AddPackage --foreign aconfmgr-git
 
